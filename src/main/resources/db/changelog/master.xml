@@ -23,4 +23,19 @@
         </addColumn>
     </changeSet>
 
+    <changeSet id="4" author="shyam">
+        <addColumn tableName="Employees_Liqui">
+            <column name="dummy" type="VARCHAR(200)">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+
+        <addColumn tableName="Employees_Liqui">
+            <column name="dummy2" type="VARCHAR(200)">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+
+    </changeSet>
+
 </databaseChangeLog>
