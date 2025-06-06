@@ -25,13 +25,33 @@
 
     <changeSet id="4" author="shyam">
         <addColumn tableName="Employees_Liqui">
-            <column name="dummy" type="VARCHAR(200)">
+            <column name="dummy-1" type="VARCHAR(200)">
                 <constraints nullable="true"/>
             </column>
         </addColumn>
 
         <addColumn tableName="Employees_Liqui">
             <column name="dummy2" type="VARCHAR(200)">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+
+        <addColumn tableName="Employees_Liqui">
+            <column name="shyam_dummy" type="VARCHAR(200)">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+
+    </changeSet>
+
+    <changeSet id="5" author="shyam" runOnChange="true">
+        <addColumn tableName="Employees_Liqui">
+            <column name="ruOnchange" type="VARCHAR(200)">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+        <addColumn tableName="Employees_Liqui">
+            <column name="checkingRunOnChange" type="VARCHAR(200)">
                 <constraints nullable="true"/>
             </column>
         </addColumn>
